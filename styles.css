@@ -1,0 +1,136 @@
+
+:root {
+  --acento: #4f46e5;
+  --gris:   #a1a1aa;
+  --suave:  #f4f4f5;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header, footer {
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header { border-bottom: 2px solid #111; }
+footer { border-top: 2px solid #111; }
+
+header h1 { font-size: 1.1rem; font-weight: 900; }
+
+header nav a {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--gris);
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+header nav a:hover { color: var(--acento); }
+
+footer p {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--gris);
+  text-transform: uppercase;
+}
+
+
+main {
+  flex: 1;
+  padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 560px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+main h2 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--gris);
+}
+
+main section {
+  background: var(--suave);
+  border: 2px solid #111;
+  border-radius: 12px;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+main section p {
+  font-size: 2rem;
+  font-weight: 900;
+  transition: opacity 0.2s;
+}
+
+main section p.hidden { opacity: 0; }
+
+main button {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  background: var(--acento);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s;
+}
+
+main button:hover { background: #3730a3; }
+
+#contador {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--gris);
+}
+
+#contador strong { color: var(--acento); }
+
+main ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+main ul li {
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 2px solid var(--suave);
+  color: var(--gris);
+  transition: all 0.2s;
+}
+
+main ul li.active {
+  border-color: var(--acento);
+  color: var(--acento);
+  background: #eef2ff;
+}
+
+
+@media (min-width: 600px) {
+  header, footer { padding: 1.25rem 2.5rem; }
+  main { padding: 4rem 2.5rem; }
+}
+
+@media (min-width: 900px) {
+  header, footer { padding: 1.25rem 5rem; }
+  main { padding: 5rem 2rem; }
+}
