@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +8,7 @@
   <link rel="icon" href="data:," />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
   <!-- HEADER -->
@@ -17,16 +19,24 @@
   <!-- MAIN -->
   <main>
 
+    <p class="label">Descubridor de poderes</p>
     <h2>¿Cuál es tu poder hoy?</h2>
 
-    <section>
+    <!-- Card poder actual -->
+    <section class="card-poder">
       <p id="nombre">Toca el botón</p>
     </section>
 
     <button id="btnDescubrir">Descubrir mi poder</button>
 
-    <p id="contador">Intentos: <strong>0</strong></p>
+    <!-- Card contador -->
+    <article class="card-contador">
+      <span>Intentos realizados</span>
+      <p id="contador"><strong>0</strong></p>
+    </article>
 
+    <!-- Lista de poderes -->
+    <p class="lista-label">Todos los poderes</p>
     <ul id="lista">
       <li data-i="0">Volar</li>
       <li data-i="1">Invisibilidad</li>
@@ -45,4 +55,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>

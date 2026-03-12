@@ -1,16 +1,16 @@
 const poderes = [
-  "Volar", 
-  "Invisibilidad", 
+  "Volar",
+  "Invisibilidad",
   "Teletransportación",
-  "Control del tiempo", 
+  "Control del tiempo",
   "Super fuerza"];
 
-let actual   = -1;
+let actual = -1;
 let intentos = 0;
 
-const nombreEl   = document.getElementById('nombre');
+const nombreEl = document.getElementById('nombre');
 const contadorEl = document.getElementById('contador').querySelector('strong');
-const items      = document.querySelectorAll('#lista li');
+const items = document.querySelectorAll('#lista li');
 
 document.getElementById('btnDescubrir').addEventListener('click', function () {
   let siguiente;
