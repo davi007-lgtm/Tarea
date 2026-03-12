@@ -62,12 +62,6 @@ main h2 {
   font-size: 2rem;
   font-weight: 900;
   letter-spacing: -0.03em;
-  transition: opacity 0.2s ease, transform 0.2s ease;
-}
-
-.card-poder p.hidden {
-  opacity: 0;
-  transform: translateY(6px);
 }
 
 main button {

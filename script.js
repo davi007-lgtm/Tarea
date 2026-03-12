@@ -20,12 +20,10 @@ document.getElementById('btnDescubrir').addEventListener('click', function () {
   intentos++;
   contadorEl.textContent = intentos;
 
-  nombreEl.classList.add('hidden');
-  setTimeout(() => {
-    nombreEl.textContent = poderes[actual];
-    nombreEl.classList.remove('hidden');
-  }, 200);
+  nombreEl.textContent = poderes[actual];
 
-  items.forEach(li => li.classList.remove('active'));
+  for (let i = 0; i < items.length; i++) {
+    items[i].classList.remove('active');
+  }
   items[actual].classList.add('active');
 });
